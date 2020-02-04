@@ -22,5 +22,9 @@ class Calculator:
 
     def squared(self, a):
         return a * a 
+    
+    def squareRoot(self, a):
+        import math
+        return (math.sqrt(a))
     '''
 

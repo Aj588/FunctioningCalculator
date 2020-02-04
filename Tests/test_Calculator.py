@@ -54,5 +54,10 @@ if __name__ == '__main__':
         calculator = Calculator()
         result = calculator.squared(6)
         self.assertEqual(36, result)
+    
+    def test_calculator_squareRoot(self):
+    calculator = Calculator()
+    result = calculator.squared(2)
+    self.assertEqual(4, result)
 '''
 
