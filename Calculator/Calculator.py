@@ -1,4 +1,7 @@
 from MathOperations.addition import Addition
+from MathOperations.division import Division
+from MathOperations.exponentiation import Exponentiation
+from MathOperations.multiplication import Multiplication
 from MathOperations.subtraction import Subtraction
 
 
@@ -15,6 +18,16 @@ class Calculator:
     def Difference(self, a, b):
         self.Result = Subtraction.difference(a, b)
         return self.Result
+
+    def Product(self, a, b):
+        self.Result = Multiplication.product(a, b)
+
+    def Fraction(self, a, b):
+        self.Result = Division.fraction(a, b)
+
+    def Power(self, a, b):
+        self.Result = Exponentiation.power(a, b)
+
 
     '''
     def multiplication(self, a, b):
