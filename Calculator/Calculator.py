@@ -5,7 +5,6 @@ from MathOperations.multiplication import Multiplication
 from MathOperations.subtraction import Subtraction
 from MathOperations.root import Root
 
-
 class Calculator:
     Result = 0
 
@@ -35,16 +34,4 @@ class Calculator:
     def Logarithm(self, a, b):
         self.Result = Log.logarithm(a, b)
 
-
-    '''
-    def multiplication(self, a, b):
-        return a * b
-
-    def squared(self, a):
-        return a * a 
-    
-    def squareRoot(self, a):
-        import math
-        return (math.sqrt(a))
-    '''
 

@@ -1,8 +1,10 @@
 from Calculator.Calculator import Calculator
-from Statistics.Mean import mean
+from StatisticsOps.mean import Mean
+
+from Random.random_Op import Random_num;
 
 class Statistics(Calculator):
 
     def mean(self, data):
-        self.result = mean(data)
-        return self.result
+        self.Result = Mean(data)
+        return self.Result

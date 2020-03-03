@@ -1,13 +1,13 @@
 import unittest
-
+from numpy.random import seed
+from numpy.random import randint
 from Calculator.Calculator import Calculator
-
+from Statistics.Statistics import Statistics
 
 class MyTestCase(unittest.TestCase):
-
-    def test_instantiate_calculator(self):
-        calculator = Calculator()
-        self.assertIsInstance(calculator, Calculator)
+    def setUp(self):
+        self.calculator = Calculator()
+        self.statistics = Statistics()
 
     def test_calculator_return_sum(self):
         calculator = Calculator()
@@ -38,26 +38,3 @@ class MyTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-    '''
-    def test_calculator_division(self):
-        calculator = Calculator()
-        result = calculator.division(6,3)
-        self.assertEqual(2, result)
-
-    def test_calculator_multiplication(self):
-        calculator = Calculator()
-        result = calculator.multiplication(6,3)
-        self.assertEqual(18, result)
-
-    def test_calculator_squared(self):
-        calculator = Calculator()
-        result = calculator.squared(6)
-        self.assertEqual(36, result)
-    
-    def test_calculator_squareRoot(self):
-    calculator = Calculator()
-    result = calculator.squared(2)
-    self.assertEqual(4, result)
-'''
-
